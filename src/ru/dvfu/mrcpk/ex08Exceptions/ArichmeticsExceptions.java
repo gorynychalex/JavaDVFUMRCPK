@@ -8,8 +8,6 @@ public class ArichmeticsExceptions {
 
     public static void main(String[] args) throws IllegalAccessException {
         int x=10, y=0;
-
-
         try {
             FileInputStream f=new FileInputStream("c:/Intel/file.txt");
             while (f.available()>0){
