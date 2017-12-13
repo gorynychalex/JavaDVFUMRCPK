@@ -23,6 +23,8 @@ public class ExampleCalendar implements Comparator<ExampleCalendar> {
         c1.set(1999,5,24);
         long cDiff = c1.getTimeInMillis()-c.getTimeInMillis();
 
+
+
         System.out.println();
 
         System.out.println("Разница в секундах = " + (cDiff/1000));

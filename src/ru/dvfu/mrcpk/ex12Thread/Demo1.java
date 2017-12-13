@@ -1,7 +1,7 @@
 package ru.dvfu.mrcpk.ex12Thread;
 
 public class Demo1 {
-    private static volatile String car = "BMW";
+    private static String car = "BMW";
 
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Start Car is " + car);
@@ -9,8 +9,9 @@ public class Demo1 {
         B b = new B();
         a.start();
         b.start();
-        a.join();
-        b.join();
+
+//        a.join();
+//        b.join();
         System.out.println("Finish Car is " + car);
 
     }
